@@ -1,0 +1,54 @@
+/* Selector ogólny */
+
+* {
+	color: purple;
+}
+
+/* Type selector działa na wszystko z tego typu na stronie */
+
+div {
+	color: white;
+}
+
+/* Class selector - działa na wszytsko co ma określoną taką klase, mozna do elemntu w HTMLu dodawać duzo klas np. class="alert-text severe-alert */
+
+.alert-text {
+	color: red;
+}
+
+/* ID delector podobne do klass tylko daje sie ID 
+<div id="title">My Awesome 90's Page</div> */
+
+#title {
+	background-color: red;
+}
+
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+/* grupowanie 
+<div>
+  <div class="subsection header">Latest Posts</div>
+  <p class="subsection preview">This is where a preview for a post might go.</p>
+</div> */
+
+.subsection.header {
+    color: red;
+  }
+
+  /* Mozna tez grupować po ID
+  <div>
+  <div class="subsection header">Latest Posts</div>
+  <p class="subsection" id="preview">This is where a preview for a post might go.</p>
+</div>*/
+
+.subsection.header {
+    color: red;
+  }
+  
+  .subsection#preview {
+    color: blue;
+  }
